@@ -21,10 +21,10 @@ wget https://raw.githubusercontent.com/kas-cor/Yii2ToVestaCP/master/Yii2ToVestaC
 
 ### Установка basic
 ```
-./Yii2ToVestaCp.sh basic user domen
+./Yii2ToVestaCP.sh basic user domen
 ```
 
 ### Установка advanced
 ```
-./Yii2ToVestaCp.sh advanced user domen
+./Yii2ToVestaCP.sh advanced user domen
 ```
