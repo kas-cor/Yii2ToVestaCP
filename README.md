@@ -14,7 +14,7 @@ composer global require "fxp/composer-asset-plugin:~1.1.1"
 
 ## Установка скрипта Yii2ToVestaCp
 ```
-wget https://raw.githubusercontent.com/kas-cor/Yii2ToVestaCP/master/Yii2ToVestaCp.sh && chmod u+x Yii2ToVestaCp.sh
+wget https://raw.githubusercontent.com/kas-cor/Yii2ToVestaCP/master/Yii2ToVestaCP.sh && chmod u+x Yii2ToVestaCP.sh
 ```
 
 ## Использование
