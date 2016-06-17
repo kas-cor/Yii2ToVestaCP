@@ -33,6 +33,7 @@ wget https://raw.githubusercontent.com/kas-cor/Yii2ToVestaCP/master/Yii2ToVestaC
 
 ```
 /home/user/web/domen/yii2/ - Фраймворк Yii2
+
 assets - Конфигурация сторонних пакетов
 commands - Консольный контролер HelloWord
 config - Конфигурационные файлы
