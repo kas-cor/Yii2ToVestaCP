@@ -12,8 +12,13 @@ mv composer.phar /usr/local/bin/composer
 composer global require "fxp/composer-asset-plugin:~1.1.1"
 ```
 
-## Установка скрипта Yii2ToVestaCp
+## Установка скрипта Yii2ToVestaCP
 ```
+wget https://raw.githubusercontent.com/kas-cor/Yii2ToVestaCP/master/Yii2ToVestaCP.sh
+chmod u+x Yii2ToVestaCP.sh
+
+or
+
 wget https://raw.githubusercontent.com/kas-cor/Yii2ToVestaCP/master/Yii2ToVestaCP.sh && chmod u+x Yii2ToVestaCP.sh
 ```
 
