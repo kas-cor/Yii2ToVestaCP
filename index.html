@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Yii2toVestaCP by kas-cor</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Yii2toVestaCP</h1>
+          <h2>Установка Yii2 на VestaCP (Ubuntu 14.04.4 LTS)</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/kas-cor/Yii2ToVestaCP/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/kas-cor/Yii2ToVestaCP/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/kas-cor/Yii2ToVestaCP" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h1>
+<a id="yii2tovestacp" class="anchor" href="#yii2tovestacp" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Yii2ToVestaCP</h1>
+
+<p>Установка Yii2 на VestaCP (Ubuntu 14.04.4 LTS)</p>
+
+<h2>
+<a id="Установка-composer" class="anchor" href="#%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-composer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Установка Composer</h2>
+
+<pre><code>curl -sS https://getcomposer.org/installer | php
+mv composer.phar /usr/local/bin/composer
+</code></pre>
+
+<h2>
+<a id="Установка-plugin-для-установки-bower-и-npm-пакетов" class="anchor" href="#%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-plugin-%D0%B4%D0%BB%D1%8F-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B8-bower-%D0%B8-npm-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Установка plugin для установки bower и npm пакетов</h2>
+
+<pre><code>composer global require "fxp/composer-asset-plugin:~1.1.1"
+</code></pre>
+
+<h2>
+<a id="Установка-скрипта-yii2tovestacp" class="anchor" href="#%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%B0-yii2tovestacp" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Установка скрипта Yii2ToVestaCP</h2>
+
+<pre><code>wget https://raw.githubusercontent.com/kas-cor/Yii2ToVestaCP/master/Yii2ToVestaCP.sh
+chmod u+x Yii2ToVestaCP.sh
+
+или
+
+wget https://raw.githubusercontent.com/kas-cor/Yii2ToVestaCP/master/Yii2ToVestaCP.sh &amp;&amp; chmod u+x Yii2ToVestaCP.sh
+</code></pre>
+
+<h2>
+<a id="Использование" class="anchor" href="#%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Использование</h2>
+
+<h3>
+<a id="Установка-basic" class="anchor" href="#%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-basic" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Установка basic</h3>
+
+<pre><code>./Yii2ToVestaCP.sh basic user domen
+</code></pre>
+
+<h4>
+<a id="Расположение-файлов" class="anchor" href="#%D0%A0%D0%B0%D1%81%D0%BF%D0%BE%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Расположение файлов</h4>
+
+<pre><code>/home/user/web/domen/yii2/ - Фраймворк Yii2
+
+assets - Конфигурация сторонних пакетов
+commands - Консольный контроллер HelloWord
+config - Конфигурационные файлы
+controllers - Контроллеры
+mail
+  layouts - Представление для почтового сообщения
+models - Модели
+runtime - Служебная информация
+views - Представления
+  layouts - Основное предстовление
+  site - Представления SiteControler
+web - Файлы доступные из веб
+  assets - Сторонние пакеты
+  css - CSS файлы стилей
+</code></pre>
+
+<h3>
+<a id="Установка-advanced" class="anchor" href="#%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-advanced" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Установка advanced</h3>
+
+<pre><code>./Yii2ToVestaCP.sh advanced user domen
+</code></pre>
+
+<h4>
+<a id="Расположение-файлов-1" class="anchor" href="#%D0%A0%D0%B0%D1%81%D0%BF%D0%BE%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Расположение файлов</h4>
+
+<pre><code>/home/user/web/domen/yii2/ - Фраймворк Yii2
+
+backend - Админка доступная по http://domen.com/admin/
+  assets - Конфигурация сторонних пакетов
+  config - Конфигурационные файлы
+  controllers - Контроллеры
+  models - Модели
+  runtime - Служебная информация
+    debug - Дебаг логи
+    logs - Лиги ошибок
+  views - Представления
+    layouts - Основное предстовление
+    site - Представления SiteControler
+  web - Файлы доступные из веб
+    assets - Сторонние пакеты
+    css - CSS файлы стилей
+
+frontend - Сайт доступный по http://domen.com/
+  assets - Конфигурация сторонних пакетов
+  config - Конфигурационные файлы
+  controllers - Контроллеры
+  models - Модели
+  runtime - Служебная информация
+    debug - Дебаг логи
+    logs - Лиги ошибок
+    mail - Файлы писем, если не включена отправка
+  views - Представления
+    layouts - Основное предстовление
+    site - Представления SiteControler
+  web - Файлы доступные из веб
+    assets - Сторонние пакеты
+    css - CSS файлы стилей
+</code></pre>
+        </section>
+
+        <footer>
+          Yii2toVestaCP is maintained by <a href="https://github.com/kas-cor">kas-cor</a><br>
+          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
