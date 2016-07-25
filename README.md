@@ -17,7 +17,7 @@ composer global require "fxp/composer-asset-plugin:~1.1.1"
 wget https://raw.githubusercontent.com/kas-cor/Yii2ToVestaCP/master/Yii2ToVestaCP.sh
 chmod u+x Yii2ToVestaCP.sh
 
-or
+или
 
 wget https://raw.githubusercontent.com/kas-cor/Yii2ToVestaCP/master/Yii2ToVestaCP.sh && chmod u+x Yii2ToVestaCP.sh
 ```
@@ -60,7 +60,7 @@ web - Файлы доступные из веб
 ```
 /home/user/web/domen/yii2/ - Фраймворк Yii2
 
-backend - Админка доступкая по http://domen/admin/
+backend - Админка доступная по http://domen.com/admin/
   assets - Конфигурация сторонних пакетов
   config - Конфигурационные файлы
   controllers - Контролеры
@@ -75,7 +75,7 @@ backend - Админка доступкая по http://domen/admin/
     assets - Сторонние пакеты
     css - CSS файлы стилей
 
-frontend - Сайт доступный по http://domen/
+frontend - Сайт доступный по http://domen.com/
   assets - Конфигурация сторонних пакетов
   config - Конфигурационные файлы
   controllers - Контролеры
