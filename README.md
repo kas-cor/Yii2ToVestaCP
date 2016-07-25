@@ -35,9 +35,9 @@ wget https://raw.githubusercontent.com/kas-cor/Yii2ToVestaCP/master/Yii2ToVestaC
 /home/user/web/domen/yii2/ - Фраймворк Yii2
 
 assets - Конфигурация сторонних пакетов
-commands - Консольный контролер HelloWord
+commands - Консольный контроллер HelloWord
 config - Конфигурационные файлы
-controllers - Контролеры
+controllers - Контроллеры
 mail
   layouts - Представление для почтового сообщения
 models - Модели
@@ -63,7 +63,7 @@ web - Файлы доступные из веб
 backend - Админка доступная по http://domen.com/admin/
   assets - Конфигурация сторонних пакетов
   config - Конфигурационные файлы
-  controllers - Контролеры
+  controllers - Контроллеры
   models - Модели
   runtime - Служебная информация
     debug - Дебаг логи
@@ -78,7 +78,7 @@ backend - Админка доступная по http://domen.com/admin/
 frontend - Сайт доступный по http://domen.com/
   assets - Конфигурация сторонних пакетов
   config - Конфигурационные файлы
-  controllers - Контролеры
+  controllers - Контроллеры
   models - Модели
   runtime - Служебная информация
     debug - Дебаг логи
