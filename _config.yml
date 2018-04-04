@@ -1,0 +1,8 @@
+title: Yii2ToVestaCP
+description: Установка Yii2 на VestaCP (Ubuntu 14.04.4 LTS)
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-tactile
+
+gems:
+  - jekyll-mentions
